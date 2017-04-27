@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="location">
+   <children>
+      <HBox layoutX="21.0" layoutY="14.0" prefHeight="59.0" prefWidth="200.0" />
+      <HBox layoutX="14.0" layoutY="100.0" prefHeight="29.0" prefWidth="266.0">
+         <children>
+            <Label id="txtLocation" fx:id="txtLocation" prefHeight="29.0" prefWidth="213.0" text="Location: " />
+         </children>
+      </HBox>
+      <HBox layoutX="7.0" layoutY="162.0" prefHeight="54.0" prefWidth="200.0">
+         <children>
+            <Label text="Temperature" />
+         </children>
+      </HBox>
+      <HBox layoutX="207.0" layoutY="155.0" prefHeight="54.0" prefWidth="200.0">
+         <children>
+            <HBox prefHeight="54.0" prefWidth="200.0">
+               <children>
+                  <Label id="temperature" fx:id="temperature" text="temp" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <Label layoutX="7.0" layoutY="260.0" text="Rainfall:" />
+      <Label id="rainfall" fx:id="rainfall" layoutX="221.0" layoutY="260.0" text="rain" />
+   </children>
+</Pane>
