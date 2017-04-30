@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.*?>
+<Pane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+      minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8"
+      fx:controller="weatherDisplay">
+    <children>
+        <HBox layoutX="328.0" layoutY="279.0" prefHeight="54.0" prefWidth="200.0">
+            <children>
+                <Label id="rainfall" fx:id="rainfall" text="rain">
+                    <font>
+                        <Font size="47.0"/>
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <HBox layoutX="321.0" layoutY="103.0" prefHeight="100.0" prefWidth="200.0"/>
+        <HBox layoutX="32.0" layoutY="132.0" prefHeight="190.0" prefWidth="200.0">
+            <children>
+                <ImageView fx:id="weatherImage" fitHeight="189.0" fitWidth="200.0" pickOnBounds="true"
+                           preserveRatio="true"/>
+            </children>
+        </HBox>
+        <Label id="txtLocation" fx:id="txtLocation" layoutX="20.0" layoutY="76.0" prefHeight="54.0" prefWidth="286.0"
+               text="Location: ">
+            <font>
+                <Font size="26.0"/>
+            </font>
+        </Label>
+        <Label alignment="CENTER" layoutX="132.0" layoutY="-27.0" prefHeight="121.0" prefWidth="321.0"
+               text="Melbourne Weather Forecast" textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="22.0"/>
+            </font>
+            <textFill>
+                <LinearGradient>
+                    <stops>
+                        <Stop color="#cd6d29"/>
+                        <Stop color="#cd6d29" offset="0.007434944237918215"/>
+                        <Stop color="#171717" offset="1.0"/>
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+        <HBox layoutX="428.0" layoutY="14.0" prefHeight="82.0" prefWidth="138.0">
+            <children>
+                <ImageView fitHeight="96.0" fitWidth="105.0" pickOnBounds="true">
+                    <image>
+                        <Image url="@wx_66.png"/>
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+        <HBox layoutX="313.0" layoutY="165.0" prefHeight="54.0" prefWidth="200.0">
+            <children>
+                <Label id="temperature" fx:id="temperature" text="temp">
+                    <font>
+                        <Font size="57.0"/>
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <Label fx:id="time" layoutX="317.0" layoutY="72.0" prefHeight="63.0" prefWidth="272.0" text="Last updated at:">
+            <font>
+                <Font size="21.0"/>
+            </font>
+        </Label>
+    </children>
+</Pane>
